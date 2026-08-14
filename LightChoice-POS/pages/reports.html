@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Reports</title>
+
+<link rel="stylesheet"
+href="../assets/css/pages/reports.css">
+
+
+
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Business Reports</h1>
+
+    <div class="report-grid">
+
+        <button onclick="dailySalesReport()">
+
+            Daily Sales Report
+
+        </button>
+
+        <button onclick="expenseReport()">
+
+            Expense Report
+
+        </button>
+
+        <button onclick="profitReport()">
+
+            Profit Report
+
+        </button>
+
+        <button onclick="inventoryReport()">
+
+            Inventory Report
+
+        </button>
+
+        <button onclick="shiftReport()">
+
+            Shift Report
+
+        </button>
+
+    </div>
+
+    <hr>
+
+    <div id="report-output">
+
+    </div>
+
+    <br>
+
+    <button onclick="window.print()">
+
+        Print / Save PDF
+
+    </button>
+
+</div>
+
+
+<script src="../assets/js/auth/permissions.js"></script>
+
+<script>
+
+protectPage("reports");
+
+</script>
+<script src="../assets/js/storage.js"></script>
+<script src="../assets/js/productStorage.js"></script>
+
+<script src="../assets/js/auth/permissions.js"></script>
+
+<script>
+
+protectPage("reports");
+
+</script>
+<script src="../assets/js/storage.js"></script>
+<script src="../assets/js/productStorage.js"></script>
+
+<script src="../assets/js/users.js"></script>
+<script src="../assets/js/shifts.js"></script>
+<script src="../assets/js/expenses.js"></script>
+<script src="../assets/js/profit.js"></script>
+<script src="../assets/js/reports.js"></script>
+
+</body>
+
+</html>

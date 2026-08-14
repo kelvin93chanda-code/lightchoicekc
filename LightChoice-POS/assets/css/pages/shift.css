@@ -1,0 +1,190 @@
+/* =====================================
+   LIGHT CHOICE POS
+   SHIFT MANAGEMENT
+===================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#f5f7fa;
+
+    color:#333;
+
+}
+
+.container{
+
+    max-width:700px;
+
+    margin:40px auto;
+
+    padding:20px;
+
+}
+
+.container h1{
+
+    text-align:center;
+
+    color:#0B6B3A;
+
+    margin-bottom:25px;
+
+}
+
+.card{
+
+    background:#fff;
+
+    border-radius:12px;
+
+    padding:30px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.card h2{
+
+    text-align:center;
+
+    color:#0B6B3A;
+
+    margin-bottom:20px;
+
+}
+
+.card hr{
+
+    margin:20px 0;
+
+    border:none;
+
+    border-top:1px solid #ddd;
+
+}
+
+.card p{
+
+    margin-bottom:15px;
+
+    font-size:15px;
+
+}
+
+.card p strong{
+
+    display:block;
+
+    color:#666;
+
+    margin-bottom:5px;
+
+}
+
+label{
+
+    display:block;
+
+    font-weight:600;
+
+    margin-bottom:8px;
+
+    margin-top:15px;
+
+}
+
+input{
+
+    width:100%;
+
+    padding:12px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    font-size:15px;
+
+    margin-bottom:15px;
+
+}
+
+input:focus{
+
+    outline:none;
+
+    border-color:#0B6B3A;
+
+}
+
+button{
+
+    width:100%;
+
+    padding:13px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#0B6B3A;
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    margin-bottom:10px;
+
+}
+
+button:hover{
+
+    background:#09552f;
+
+}
+
+#shift-sales{
+
+    color:#0B6B3A;
+
+    font-weight:bold;
+
+    font-size:18px;
+
+}
+
+#shift-status{
+
+    font-size:24px;
+
+}
+
+@media (max-width:768px){
+
+    .container{
+
+        padding:15px;
+
+    }
+
+    .card{
+
+        padding:20px;
+
+    }
+
+}

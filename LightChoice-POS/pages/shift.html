@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shift Management</title>
+
+<link rel="stylesheet"
+href="../assets/css/pages/shift.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Shift Management</h1>
+
+    <div class="card">
+
+        <h2 id="shift-status">
+            No Active Shift
+        </h2>
+
+        <hr>
+
+        <p>
+
+            <strong>Cashier</strong>
+
+            <br>
+
+            <span id="cashier-name">-</span>
+
+        </p>
+
+        <p>
+
+            <strong>Started</strong>
+
+            <br>
+
+            <span id="shift-start">-</span>
+
+        </p>
+
+        <p>
+
+            <strong>Total Sales</strong>
+
+            <br>
+
+            <span id="shift-sales">
+                K0.00
+            </span>
+
+        </p>
+
+        <hr>
+
+        <label>
+
+            Opening Cash
+
+        </label>
+
+        <input
+            type="number"
+            id="opening-cash">
+
+        <button
+            onclick="openShift()">
+
+            Open Shift
+
+        </button>
+
+        <hr>
+
+        <label>
+
+            Closing Cash
+
+        </label>
+
+        <input
+            type="number"
+            id="closing-cash">
+
+        <button
+            onclick="closeShift()">
+
+            Close Shift
+
+        </button>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script> <script src="../assets/js/supabase.js"></script>
+
+<script src="../assets/js/users.js"></script> <script src="../assets/js/permissions.js"></script> <script> protectPage("shifts"); </script> <script src="../assets/js/shifts.js"></script>
+
+</body>
+
+</html>

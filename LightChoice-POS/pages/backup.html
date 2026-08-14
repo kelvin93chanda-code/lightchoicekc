@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Backup & Restore</title>
+
+<link rel="stylesheet"
+href="../assets/css/pages/backup.css">
+
+</head>
+
+<body>
+
+<div class="backup-container">
+
+    <h1>Backup & Restore</h1>
+
+    <div class="backup-card">
+
+        <h2>Create Backup</h2>
+
+        <p>
+
+            Download a complete backup of your business data.
+
+        </p>
+
+        <button onclick="downloadBackup()">
+
+            📥 Download Backup
+
+        </button>
+
+    </div>
+
+    <div class="backup-card">
+
+        <h2>Restore Backup</h2>
+
+        <p>
+
+            Restore your business from a previous backup.
+
+        </p>
+
+        <input
+            type="file"
+            id="backup-file"
+            accept=".json">
+
+        <button onclick="restoreBackup()">
+
+            📤 Restore Backup
+
+        </button>
+
+    </div>
+
+    <div class="backup-card">
+
+    <h2>Backup Information</h2>
+
+    <table class="backup-table">
+
+        <tr>
+
+            <td>Last Backup</td>
+
+            <td id="last-backup">Never</td>
+
+        </tr>
+
+        <tr>
+
+            <td>System Version</td>
+
+            <td id="system-version">v1.0</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Products</td>
+
+            <td id="backup-products">0</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Sales</td>
+
+            <td id="backup-sales">0</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Expenses</td>
+
+            <td id="backup-expenses">0</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Employees</td>
+
+            <td id="backup-users">0</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Shift Records</td>
+
+            <td id="backup-shifts">0</td>
+
+        </tr>
+
+    </table>
+
+</div>
+
+<hr>
+
+<h3 id="backup-status">
+
+    Backup Status: Unknown
+
+</h3>
+
+<p id="backup-message">
+
+</p>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script> <script src="../assets/js/supabase.js"></script>
+<script src="../assets/js/auth/permissions.js"></script>
+
+<script>
+
+protectPage("backup");
+
+</script>
+
+<script src="../assets/js/backup.js"></script>
+
+</body>
+
+</html>

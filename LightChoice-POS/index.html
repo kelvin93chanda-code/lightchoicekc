@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- =========================
+         BASIC SETTINGS
+    ========================== -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Light Choice POS</title>
+
+    <!-- =========================
+         GOOGLE FONT
+    ========================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- =========================
+         FONT AWESOME
+    ========================== -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- =========================
+         BASE CSS
+    ========================== -->
+
+    <link rel="stylesheet" href="assets/css/base/variables.css">
+    <link rel="stylesheet" href="assets/css/base/reset.css">
+    <link rel="stylesheet" href="assets/css/base/typography.css">
+    <link rel="stylesheet" href="assets/css/base/utilities.css">
+    <link rel="stylesheet" href="assets/css/base/style.css">
+
+    <!-- =========================
+         LAYOUT CSS
+    ========================== -->
+
+    <link rel="stylesheet" href="assets/css/layout/sidebar.css">
+    <link rel="stylesheet" href="assets/css/layout/navbar.css">
+    <link rel="stylesheet" href="assets/css/layout/grid.css">
+
+    <!-- =========================
+         COMPONENTS
+    ========================== -->
+
+    <link rel="stylesheet" href="assets/css/components/buttons.css">
+    <link rel="stylesheet" href="assets/css/components/cards.css">
+    <link rel="stylesheet" href="assets/css/components/forms.css">
+    <link rel="stylesheet" href="assets/css/components/tables.css">
+    <link rel="stylesheet" href="assets/css/components/badges.css">
+    <link rel="stylesheet" href="assets/css/components/modal.css">
+    <link rel="stylesheet" href="assets/css/components/dropdown.css">
+    <link rel="stylesheet" href="assets/css/components/toast.css">
+    <link rel="stylesheet" href="assets/css/components/loader.css">
+
+    <!-- =========================
+         PAGE CSS
+    ========================== -->
+
+    <link rel="stylesheet" href="assets/css/pages/dashboard.css">
+
+    <!-- =========================
+         RESPONSIVE
+    ========================== -->
+
+    <link rel="stylesheet" href="assets/css/responsive/desktop.css">
+    <link rel="stylesheet" href="assets/css/responsive/tablet.css">
+    <link rel="stylesheet" href="assets/css/responsive/mobile.css">
+
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- =========================
+             SIDEBAR
+        ========================== -->
+
+        <aside class="sidebar">
+
+            <div class="logo">
+                <i class="fa-solid fa-store"></i>
+                <h2>Light Choice</h2>
+            </div>
+
+          <ul class="menu">
+<li id="menu-dashboard" class="active"> <a href="index.html"> <i class="fa-solid fa-house"></i> <span>Dashboard</span> </a> </li> <li id="menu-pos">
+
+    <a href="pages/pos.html">
+
+        <i class="fa-solid fa-cart-shopping"></i>
+
+        <span>Point of Sale</span>
+
+    </a>
+
+</li>
+<li id="menu-products">
+
+    <a href="pages/products.html">
+
+        <i class="fa-solid fa-box"></i>
+
+        <span>Products</span>
+
+    </a>
+
+</li>
+
+<li id="menu-inventory">
+
+    <a href="pages/inventory.html">
+
+        <i class="fa-solid fa-warehouse"></i>
+
+        <span>Inventory</span>
+
+    </a>
+
+</li>
+<li id="menu-reports">
+
+    <a href="pages/reports.html">
+
+        <i class="fa-solid fa-chart-line"></i>
+
+        <span>Reports</span>
+
+    </a>
+
+</li>
+
+<div class="quick-btn" onclick="window.location.href='pages/backup.html'"> <i class="fa-solid fa-database"></i> <p>Backup</p> </div>
+
+<li id="menu-employees">
+
+    <a href="pages/employees.html">
+
+        <i class="fa-solid fa-users"></i>
+
+        <span>Employees</span>
+
+    </a>
+
+</li>
+<li id="menu-shifts">
+
+    <a href="pages/shift.html">
+
+        <i class="fa-solid fa-clock"></i>
+
+        <span>Shifts</span>
+
+    </a>
+
+</li>
+<li id="menu-expenses">
+
+    <a href="pages/expenses.html">
+
+        <i class="fa-solid fa-money-bill-wave"></i>
+
+        <span>Expenses</span>
+
+    </a>
+
+</li>
+<li id="menu-backup">
+
+    <a href="pages/backup.html">
+
+        <i class="fa-solid fa-database"></i>
+
+        <span>Backup & Restore</span>
+
+    </a>
+
+</li>
+
+
+</ul>
+
+        </aside>
+
+        <!-- =========================
+             MAIN CONTENT
+        ========================== -->
+
+        <main class="main">
+
+            <!-- =========================
+                 NAVBAR
+            ========================== -->
+
+            <header class="navbar">
+
+                <div class="left">
+                    <h2>Dashboard</h2>
+                </div>
+
+                <div class="right">
+
+                    <i class="fa-solid fa-bell"></i>
+
+                    <i class="fa-solid fa-moon"></i>
+
+                    <div class="user">
+                        <strong id="logged-user">User</strong><br> <small id="logged-role">Role</small>
+                    </div>
+
+                </div>
+
+                <button class="logout-btn" onclick="logoutUser()"> <i class="fa-solid fa-right-from-bracket"></i> Logout </button>
+
+            </header>
+
+            <!-- =========================
+                 DASHBOARD
+            ========================== -->
+
+            <section class="dashboard">
+
+                <!-- Page Title -->
+
+                <div class="page-title">
+
+                    <div>
+                        <h2>Light Choice POS</h2>
+                        <small>Simple Shop Management System</small>
+                    </div>
+
+                    <p>
+                        Manage your shop efficiently from one place.
+                    </p>
+
+                </div>
+
+                <button onclick="testSupabase()">Test Cloud</button>
+
+                <!-- Statistics Cards -->
+
+               <div class="stats-grid">
+
+    <div class="stat-card">
+
+        <i class="fa-solid fa-money-bill-wave"></i>
+
+        <h3>Today's Sales</h3>
+
+        <h2 id="today-sales">
+            K0.00
+        </h2>
+
+    </div>
+
+    <div class="stat-card">
+
+        <i class="fa-solid fa-receipt"></i>
+
+        <h3>Orders Today</h3>
+
+        <h2 id="today-orders">
+            0
+        </h2>
+
+    </div>
+
+    <div class="stat-card">
+
+        <i class="fa-solid fa-box"></i>
+
+        <h3>Total Products</h3>
+
+        <h2 id="total-products">
+            0
+        </h2>
+
+    </div>
+
+    <div class="stat-card">
+
+        <i class="fa-solid fa-triangle-exclamation"></i>
+
+        <h3>Low Stock</h3>
+
+        <h2 id="low-stock-count">
+            0
+        </h2>
+
+    </div>
+
+</div>
+                <!-- Quick Actions -->
+
+                <div class="quick-actions">
+
+                    <div class="quick-btn">
+                        <i class="fa-solid fa-cart-plus"></i>
+                        <p>New Sale</p>
+                    </div>
+
+                    <div class="quick-btn">
+                        <i class="fa-solid fa-box"></i>
+                        <p>Products</p>
+                    </div>
+
+                    
+                   <a href="pages/inventory.html">
+
+                    <div class="quick-btn">
+                        <i class="fa-solid fa-warehouse"></i>
+                        <p>Inventory</p>
+                    </div>
+                    </a>
+
+                    
+                   <a href="pages/reports.html">
+
+                    <div class="quick-btn">
+                        <i class="fa-solid fa-chart-column"></i>
+                        <p>Reports</p>
+                    </div>
+                    </a>
+
+                </div>
+
+                <div class="dashboard-panel"> <div class="panel-header"> <h3>Best Selling Products</h3> <span class="panel-badge">Today</span> </div> <div id="best-selling-list" class="best-selling-list"> <p style="text-align:center;padding:20px;"> No sales yet. </p> </div> </div>
+
+                <!-- Dashboard Panels -->
+<div class="dashboard-panel"> <div class="panel-header"> <h3>Recent Sales</h3> <a href="pages/reports.html">View All</a> </div> <table class="mini-table"> <thead> <tr> <th>Invoice</th> <th>Payment</th> <th>Total</th> </tr> </thead> <tbody id="recent-sales-body"> <tr> <td colspan="3" style="text-align:center;padding:20px;"> No sales available. </td> </tr> </tbody> </table> </div>
+
+                   <div class="dashboard-panel">
+
+    <div class="panel-header">
+
+        <h3>Low Stock Products</h3>
+
+        <a href="pages/inventory.html">View Inventory</a>
+
+    </div>
+
+    <table class="mini-table">
+
+        <thead>
+
+            <tr>
+
+                <th>Product</th>
+
+                <th>Stock</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody id="low-stock-body">
+
+            <tr>
+
+                <td colspan="2" style="text-align:center;padding:20px;">
+
+                    No low stock products.
+
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script> <script src="assets/js/supabase.js"></script>
+
+   
+   <script src="assets/js/users.js"></script>
+   <!-- Permissions --> <script src="assets/js/permissions.js"></script>
+    <!-- Dashboard Logic --> <script src="assets/js/dashboard.js"></script>
+      <!-- App Initialization --> <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Employee Management</title>
+
+<link rel="stylesheet" href="../assets/css/pages/employees.css">
+
+
+</head>
+
+<body>
+
+<div class="employee-page">
+
+    <h1>Employee Management</h1>
+
+    <div class="top-bar">
+
+        <input
+            type="text"
+            id="search-user"
+            placeholder="Search employee...">
+
+        <button onclick="openEmployeeModal()">
+
+            + Add Employee
+
+        </button>
+
+    </div>
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>Name</th>
+
+                <th>Username</th>
+
+                <th>Role</th>
+
+                <th>Status</th>
+
+                <th>Actions</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody id="employee-table"></tbody>
+
+    </table>
+
+</div>
+
+<div class="user-info"> Logged in as: <strong id="logged-user"></strong> (<span id="logged-role"></span>) </div>
+
+<!-- =====================================
+     Employee Modal
+====================================== -->
+
+<div id="employee-modal" class="modal">
+
+    <div class="modal-content">
+
+        <h2 id="modal-title">
+            Add Employee
+        </h2>
+
+        <input
+            type="hidden"
+            id="employee-id">
+
+        <label>Full Name</label>
+
+        <input
+            type="text"
+            id="employee-name"
+            placeholder="Enter full name">
+
+        <label>Username</label>
+
+        <input
+            type="text"
+            id="employee-username"
+            placeholder="Enter username">
+
+        <label>Password</label>
+
+        <input
+            type="password"
+            id="employee-password"
+            placeholder="Enter password">
+
+        <label>Role</label>
+
+        <select id="employee-role">
+
+            <option>Admin</option>
+
+            <option>Manager</option>
+
+            <option>Cashier</option>
+
+        </select>
+
+        <label>Status</label>
+
+        <select id="employee-status">
+
+            <option value="true">Active</option>
+
+            <option value="false">Inactive</option>
+
+        </select>
+
+        <div class="modal-buttons">
+
+            <button onclick="saveEmployee()">
+
+                Save
+
+            </button>
+
+            <button onclick="closeEmployeeModal()">
+
+                Cancel
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script> <script src="../assets/js/supabase.js"></script>
+<script src="../assets/js/users.js"></script>
+<script src="../assets/js/permissions.js"></script>
+<script src="../assets/js/employees.js"></script>
+
+<script>
+
+if (!getCurrentUser()) {
+
+    window.location.href = "login.html";
+
+}
+
+protectPage("employees");
+
+</script>
+
+</body>
+
+</html>

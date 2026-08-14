@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shift Closing Report</title>
+
+    <link rel="stylesheet" href="../assets/css/pages/shift-report.css">
+</head>
+<body>
+
+<div class="report-container">
+
+    <div class="report-header">
+        <h1>LIGHT CHOICE POS</h1>
+        <h2>Shift Closing Report</h2>
+        <p id="report-date"></p>
+    </div>
+
+    <div class="report-section">
+
+        <div class="row">
+            <span>Cashier</span>
+            <strong id="cashier">-</strong>
+        </div>
+
+        <div class="row">
+            <span>Started</span>
+            <strong id="started">-</strong>
+        </div>
+
+        <div class="row">
+            <span>Closed</span>
+            <strong id="closed">-</strong>
+        </div>
+
+    </div>
+
+    <div class="report-section totals">
+
+        <div class="row">
+            <span>Opening Cash</span>
+            <strong id="opening-cash">K0.00</strong>
+        </div>
+
+        <div class="row">
+            <span>Sales</span>
+            <strong id="sales">K0.00</strong>
+        </div>
+
+        <div class="row">
+            <span>Expected Cash</span>
+            <strong id="expected-cash">K0.00</strong>
+        </div>
+
+        <div class="row">
+            <span>Actual Cash</span>
+            <strong id="actual-cash">K0.00</strong>
+        </div>
+
+        <div class="row difference">
+            <span>Difference</span>
+            <strong id="difference">K0.00</strong>
+        </div>
+
+    </div>
+
+    <div class="signatures">
+
+        <div class="sig">
+            <p>Cashier Signature</p>
+            <div class="line"></div>
+        </div>
+
+        <div class="sig">
+            <p>Manager Signature</p>
+            <div class="line"></div>
+        </div>
+
+    </div>
+
+    <div class="actions no-print">
+
+        <button onclick="window.print()">
+
+            Print Report
+
+        </button>
+
+        <button onclick="window.close()">
+
+            Close
+
+        </button>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script> <script src="../assets/js/supabase.js"></script>
+
+<script src="../assets/js/shift-report.js"></script>
+
+</body>
+</html>

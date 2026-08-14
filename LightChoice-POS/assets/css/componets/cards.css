@@ -1,0 +1,57 @@
+.stats-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+.stat-card{
+
+    background:white;
+
+    border-radius:12px;
+
+    padding:25px;
+
+    box-shadow:var(--shadow);
+
+    transition:.3s;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.stat-card i{
+
+    font-size:28px;
+
+    color:var(--primary);
+
+    margin-bottom:15px;
+
+}
+
+.stat-card h3{
+
+    color:var(--text-light);
+
+    font-size:15px;
+
+    font-weight:500;
+
+}
+
+.stat-card h2{
+
+    margin-top:10px;
+
+    font-size:28px;
+
+}

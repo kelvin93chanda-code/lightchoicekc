@@ -1,0 +1,129 @@
+body{
+
+    margin:0;
+
+    background:#f5f5f5;
+
+    font-family:Poppins,sans-serif;
+
+}
+
+.backup-container{
+
+    max-width:900px;
+
+    margin:40px auto;
+
+}
+
+.backup-card{
+
+    background:white;
+
+    padding:30px;
+
+    margin-bottom:25px;
+
+    border-radius:10px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+
+}
+
+.backup-card h2{
+
+    color:#0B6B3A;
+
+}
+
+.backup-card button{
+
+    margin-top:20px;
+
+    padding:12px 25px;
+
+    background:#0B6B3A;
+
+    color:white;
+
+    border:none;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+}
+
+.backup-card button:hover{
+
+    background:#09552e;
+
+}
+
+#backup-file{
+
+    margin-top:15px;
+
+}
+
+.backup-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:20px;
+
+}
+
+.backup-table td{
+
+    padding:12px;
+
+    border-bottom:1px solid #ddd;
+
+}
+
+.backup-table td:first-child{
+
+    font-weight:bold;
+
+    color:#444;
+
+}
+
+#backup-status{
+
+    margin-top:20px;
+
+    font-size:20px;
+
+}
+
+.status-good{
+
+    color:#0B6B3A;
+
+}
+
+.status-warning{
+
+    color:#d68910;
+
+}
+
+.status-danger{
+
+    color:#c0392b;
+
+}
+
+#backup-message{
+
+    font-size:15px;
+
+    color:#555;
+
+}

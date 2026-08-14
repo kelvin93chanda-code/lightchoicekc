@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard</title>
+
+<link rel="stylesheet" href="../assets/css/base/style.css">
+<link rel="stylesheet" href="../assets/css/pages/dashboard.css">
+
+</head>
+
+<body>
+
+    <div class="user-info">
+
+    Welcome,
+
+    <strong id="logged-user"></strong>
+
+    <br>
+
+    <small id="logged-role"></small>
+
+</div>
+
+<div class="dashboard">
+
+    <h1>Light Choice Dashboard</h1>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <h3>Today's Revenue</h3>
+
+            <h1 id="today-revenue">
+                K0.00
+            </h1>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Transactions</h3>
+
+            <h1 id="transactions">
+                0
+            </h1>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Products Sold</h3>
+
+            <h1 id="products-sold">
+                0
+            </h1>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Best Seller</h3>
+
+            <h2 id="best-seller">
+                None
+            </h2>
+
+        </div>
+
+    </div>
+
+</div>
+<div class="dashboard">
+
+    <div class="card">
+
+        <h3>Today's Sales</h3>
+
+        <h2 id="today-sales">K0.00</h2>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Today's Expenses</h3>
+
+        <h2 id="today-expenses">K0.00</h2>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Today's Profit</h3>
+
+        <h2 id="today-profit">K0.00</h2>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Weekly Profit</h3>
+
+        <h2 id="weekly-profit">K0.00</h2>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Monthly Profit</h3>
+
+        <h2 id="monthly-profit">K0.00</h2>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Inventory Value</h3>
+
+        <h2 id="inventory-value">K0.00</h2>
+
+    </div>
+
+</div>
+
+<h2>Best Selling Products</h2>
+
+<table>
+
+    <thead>
+
+        <tr>
+
+            <th>Product</th>
+
+            <th>Sold</th>
+
+        </tr>
+
+    </thead>
+
+    <tbody id="best-selling"></tbody>
+
+</table>
+
+<h2>Low Stock</h2>
+
+<table>
+
+    <thead>
+
+        <tr>
+
+            <th>Product</th>
+
+            <th>Remaining</th>
+
+        </tr>
+
+    </thead>
+
+    <tbody id="low-stock"></tbody>
+
+</table>
+
+<h2>Recent Sales</h2>
+
+<table>
+
+    <thead>
+
+        <tr>
+
+            <th>Invoice</th>
+
+            <th>Payment</th>
+
+            <th>Total</th>
+
+        </tr>
+
+    </thead>
+
+
+
+
+
+    <tbody id="recent-sales"></tbody>
+
+</table>
+
+<script src="../assets/js/auth/permissions.js"></script>
+
+<script>
+
+protectPage("dashboard");
+
+</script>
+<script src="../assets/js/storage.js"></script>
+<script src="../assets/js/dashboard.js"></script>
+<script src="../assets/js/expenses.js"></script>
+<script src="../assets/js/profit.js"></script>
+<script src="../assets/js/profit.js"></script>
+
+</body>
+
+</html>

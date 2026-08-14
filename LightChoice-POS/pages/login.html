@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Light Choice POS Login</title>
+
+<link rel="stylesheet" href="../assets/css/pages/login.css">
+
+</head>
+
+<body>
+
+<div class="login-box">
+
+    <img src="../assets/images/logo/logo.jpg" class="logo">
+
+    <h2>Light Choice POS</h2>
+
+    <p>Please sign in</p>
+
+    <input
+        type="text"
+        id="username"
+        placeholder="Username">
+
+    <input
+        type="password"
+        id="password"
+        placeholder="Password">
+
+    <button onclick="loginUser()">
+
+        Login
+
+    </button>
+
+    <p id="login-error"></p>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script> <script src="../assets/js/supabase.js"></script>
+
+<script src="../assets/js/users.js"></script>
+<script src="../assets/js/login.js"></script>
+
+
+
+</body>
+
+</html>

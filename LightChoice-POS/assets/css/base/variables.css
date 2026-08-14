@@ -1,0 +1,41 @@
+:root{
+
+    /* Brand Colors */
+
+    --primary:#2563EB;
+    --primary-dark:#1D4ED8;
+
+    --success:#16A34A;
+    --warning:#F59E0B;
+    --danger:#DC2626;
+
+    --sidebar:#071B36;
+    --sidebar-hover:#0E2A4D;
+
+    --background:#F4F7FC;
+    --white:#FFFFFF;
+
+    --text:#1E293B;
+    --text-light:#64748B;
+
+    --border:#E2E8F0;
+
+    /* Sizes */
+
+    --sidebar-width:260px;
+    --navbar-height:70px;
+
+    /* Radius */
+
+    --radius-sm:8px;
+    --radius-md:12px;
+    --radius-lg:18px;
+
+    /* Shadow */
+
+    --shadow:0 5px 20px rgba(0,0,0,.06);
+
+    /* Animation */
+
+    --transition:.3s ease;
+}
